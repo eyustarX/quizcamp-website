@@ -1,0 +1,143 @@
+/* reset body style */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* main background */
+.banner {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+              url("../images/MAIN.jpg") center/cover no-repeat;
+  position: relative; /* so content can be in middle */
+}
+
+/* top bar with logo and links */
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2; /* stay above text */
+}
+
+/* logo style */
+.logo {
+  width: 120px;
+  cursor: pointer;
+}
+
+/* navbar list */
+.navbar ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar items */
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+/* navbar links */
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+/* link color on hover */
+.navbar ul li a:hover {
+  color: #009688;
+}
+
+/* underline effect */
+.navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: width 0.4s ease;
+}
+
+/* make underline show */
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+/* middle text */
+.content {
+  width: 100%;
+  position: absolute;   
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+/* big heading */
+.content h1 {
+  font-size: 70px;
+  margin: 20px 0;
+}
+
+/* small text */
+.content p {
+  margin: 20px auto;
+  font-weight: 300;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+/* button style */
+button {
+  width: 200px;
+  padding: 15px 0;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #960000;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+/* button span for hover color */
+button span {
+  background: #009688;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: width 0.4s ease;
+}
+
+/* make span full width when hover */
+button:hover span {
+  width: 100%;
+}
+
+/* remove border on hover */
+button:hover {
+  border: none;
+}
