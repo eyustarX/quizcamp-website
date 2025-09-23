@@ -1,0 +1,88 @@
+# Quizcamp Website
+
+Welcome to **Quizcamp** – a fun and interactive quiz website where learners can test their knowledge in subjects like ICT and Physics. This project is built with **HTML, CSS, and JavaScript** and is fully responsive.
+
+---
+
+## 🚀 Features
+
+- **Interactive Quizzes** – Challenge your knowledge.  
+- **Multiple Subjects** – ICT, Physics, and more.  
+- **Real-time Timer** – Keep track of time for each question.  
+- **Score Tracking** – See your results at the end of each quiz.  
+- **Responsive Design** – Works on desktop and mobile devices.  
+
+---
+
+## 📂 Project Structure
+
+quizcamp-website/
+│
+├─ index.html # Homepage with subject selection
+├─ ICT.html # ICT quiz page
+├─ Physics.html # Physics quiz page
+├─ about.html # About page
+├─ contact.html # Contact page (optional)
+├─ css/
+│ ├─ style-ict.css # Styles for quiz pages
+│ └─ about.css # Styles for About page
+├─ js/
+│ └─ script-ict.js # Quiz logic
+├─ images/
+│ ├─ ICT.jpg # Background image
+│ ├─ quiz-camp.png # Logo
+│ └─ timer-icon.svg # Timer icon
+
+
+---
+
+## 💻 How to Use
+
+1. Clone or download the repository to your local machine.
+2. Open `index.html` in your preferred web browser.
+3. Select a subject (ICT or Physics) to start a quiz.
+4. Answer the questions within the given time frame.
+5. Review your score at the end of the quiz and retake it to improve your performance.
+
+---
+
+## 🌐 Live Demo
+
+Experience Quizcamp live here: [Quizcamp Live Demo](https://eyustarX.github.io/quizcamp-website/)
+
+*Note: Ensure GitHub Pages is enabled in the repository settings for the live demo to function correctly.*
+
+---
+
+## 👨‍💻 Author
+
+**Eyob Tamiru** – Developer of Quizcamp
+
+Feel free to explore, contribute, or reach out for collaborations!
+
+---
+
+## 📸 Screenshots
+
+
+---
+
+## 🛠️ Technologies Used
+
+- **HTML5**: For structuring the content.
+- **CSS3**: For styling and layout.
+- **JavaScript**: For interactive elements and quiz logic.
+- **GitHub Pages**: For hosting the website.
+
+---
+
+Please ensure your code adheres to the existing style and includes appropriate tests.
+
+---
+
+## 📬 Contact
+
+For any inquiries or feedback, please open an issue in the repository or contact the author directly.
+
+---
+
