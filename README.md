@@ -58,8 +58,6 @@ Experience Quizcamp live here: [Quizcamp Live Demo](https://eyustarX.github.io/q
 
 **Eyob Tamiru** – Developer of Quizcamp
 
-Feel free to explore, contribute, or reach out for collaborations!
-
 ---
 
 ## 📸 Screenshots
