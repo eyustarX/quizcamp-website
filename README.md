@@ -17,7 +17,7 @@ Welcome to **Quizcamp** – a fun and interactive quiz website where learners ca
 ## 📂 Project Structure
 
 quizcamp-website/
-│
+
 ├─ index.html # Homepage with subject selection
 ├─ ICT.html # ICT quiz page
 ├─ Physics.html # Physics quiz page
@@ -46,9 +46,7 @@ quizcamp-website/
 
 ## 🌐 Live Demo
 
-Experience Quizcamp live here: [Quizcamp Live Demo](https://eyustarX.github.io/quizcamp-website/)
-
-*Note: Ensure GitHub Pages is enabled in the repository settings for the live demo to function correctly.*
+Experience Quizcamp live here: [Quizcamp Live Demo](https://eyustarx.github.io/quizcamp-website/)
 
 ---
 
