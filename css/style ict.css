@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Colors we use for buttons, backgrounds, etc. */
+:root {
+  --primary: #009688;
+  --secondary: #0a69ed;
+  --success: #689f38;
+  --error: #d32f2f;
+  --light-bg: #ffffff;
+  --dark-overlay: rgba(0, 0, 0, 0.75);
+}
+
+/* Body and main page background */
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(var(--dark-overlay), var(--dark-overlay)),
+              url("../images/ICT.jpg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navbar with logo and menu */
+.navbar {
+  width: 85%;
+  margin: 20px auto;
+  display: flex;                  /* logo + menu in a row */
+  justify-content: space-between; /* logo left, menu right */
+  align-items: center;            /* vertically centered */
+  position: relative;
+  z-index: 2;
+}
+
+/* Logo */
+.logo {
+  width: 120px;
+  cursor: pointer;
+}
+
+/* Menu links */
+.navbar ul {
+  display: flex;       /* horizontal menu */
+  list-style: none;    /* remove bullets */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin-left: 20px;   /* space between items */
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: var(--primary);
+}
+
+/* Start screen and score screen are full page and centered */
+.start-screen,
+.score-container {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Buttons style */
+button {
+  width: 200px;
+  padding: 15px 0;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid var(--primary);
+  background: var(--primary);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Change button look when hovering */
+button:hover {
+  background: transparent;
+  color: var(--primary);
+}
+
+/* Start and restart buttons */
+#start-button,
+#restart {
+  font-size: 1.3em;
+  padding: 0.5em 1.8em;
+  border-radius: 0.3em;
+}
+
+/* Extra space for restart button */
+#restart {
+  margin-top: 1em;
+}
+
+/* The quiz box in center */
+#display-container {
+  background: var(--light-bg);
+  padding: 2em;
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.6em;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Top part of quiz with question number and timer */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid #eee;
+}
+
+/* Timer box */
+.timer-div {
+  background: #e1f5fe;
+  padding: 0.6em 1.5em;
+  border-radius: 2em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+/* Question text */
+.question {
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+
+/* Each answer option */
+.option-div {
+  font-size: 0.95em;
+  width: 100%;
+  padding: 1em;
+  margin: 0.4em 0;
+  text-align: left;
+  border: 1px solid #c0bfd2;
+  border-radius: 0.3em;
+  background: #0a0a0a; 
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.option-div:hover {
+  background: #e0e0e0;
+}
+
+/* Disabled options after selecting */
+.option-div:disabled {
+  color: #888;
+  cursor: not-allowed;
+}
+
+/* Next button style */
+#next-button {
+  font-size: 1em;
+  margin-top: 1.5em;
+  background: var(--secondary);
+  color: #fff;
+  padding: 0.7em 1.8em;
+  border-radius: 0.3em;
+  float: right;
+  transition: background 0.3s ease;
+}
+
+/* Hover effect for next button */
+#next-button:hover {
+  background: #0848a8;
+}
+
+/* Hide elements */
+.hide {
+  display: none;
+}
+
+/* Correct answer style */
+.correct {
+  background: #e7f6d5;
+  color: var(--success);
+  border-color: var(--success);
+}
+
+/* Wrong answer style */
+.incorrect {
+  background: #ffdde0;
+  color: var(--error);
+  border-color: var(--error);
+}
+
+/* Score text */
+#user-score {
+  font-size: 1.5em;
+  color: #fff;
+  margin-bottom: 1em;
+}
