@@ -14,23 +14,23 @@ Welcome to **Quizcamp** – a fun and interactive quiz website where learners ca
 
 ---
 
-## 📂 Project Structure
+# 📋 Project Structure
 
 quizcamp-website/
-├── index.html         # Homepage with subject selection
-├── ICT.html           # ICT quiz page
-├── Physics.html       # Physics quiz page
-├── about.html         # About page
+├── index.html          # Homepage
+├── ICT.html            # ICT Quiz
+├── Physics.html        # Physics Quiz
+├── about.html          # About Page
 ├── css/
-│   ├── style-ict.css  # Styles for quiz pages
-│   └── about.css      # Styles for About page
+│   ├── style-ict.css   # Quiz styles
+│   └── about.css       # About page styles
 ├── js/
-│   └── script-ict.js  # Quiz logic
+│   ├── script-ict.js    # ICT quiz logic
+│   └── script-physics.js # Physics quiz logic
 └── images/
-    ├── ICT.jpg         # Background image for ICT quiz
+    ├── ICT.jpg         # Background
     ├── quiz-camp.png   # Logo
-    └── timer-icon.svg  # Timer icon
-
+    └── timer-icon.svg  # Icon
 
 ---
 
