@@ -16,11 +16,6 @@ Welcome to **Quizcamp** – a fun and interactive quiz website where learners ca
 
 # 📋 Project Structure
 
-# 📋 Project Structure
-
-<details>
-<summary>📁 quizcamp-website/ (Click to expand)</summary>
-
 ### 🌐 Pages
 - `index.html` - **Homepage** with subject selection
 - `ICT.html` - **ICT Quiz** page
@@ -32,14 +27,13 @@ Welcome to **Quizcamp** – a fun and interactive quiz website where learners ca
 - `about.css` - Styling for About page
 
 ### ⚡ Scripts (`js/`)
-- `script-ict.js` - Quiz logic and functionality
+- `script-ict.js` - ICT quiz logic and functionality
+- `script-physics.js` - Physics quiz logic and functionality
 
 ### 🖼️ Assets (`images/`)
 - `ICT.jpg` - Background image for ICT quiz
 - `quiz-camp.png` - Project logo
 - `timer-icon.svg` - Timer icon
-
-</details>
 
 ---
 
